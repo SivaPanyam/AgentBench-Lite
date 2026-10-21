@@ -1,0 +1,2411 @@
+{
+  "created_at_utc": "2026-10-21T16:28:25.688111+00:00",
+  "experiment": "AgentBench Lite",
+  "methodology": {
+    "completion_definition": "The agent returned success with a result matching the expected result.",
+    "execution_mode": "deterministic scripted actions",
+    "expected_status_policy": "Recovery-success tasks expect baseline to fail and recovery to succeed. Other tasks use their declared expected_status.",
+    "max_steps_and_retries": "defined per benchmark task",
+    "model": "MockModel",
+    "same_actions_for_both_strategies": true,
+    "task_order": "benchmark dataset order"
+  },
+  "results": [
+    {
+      "actual_result": 10,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Add two numbers.",
+      "expected_result": 10,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 4,
+            "b": 6,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 10,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "calc_001",
+      "task_success": true
+    },
+    {
+      "actual_result": 10,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Add two numbers.",
+      "expected_result": 10,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 4,
+            "b": 6,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 10,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "calc_001",
+      "task_success": true
+    },
+    {
+      "actual_result": 6,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Subtract two numbers.",
+      "expected_result": 6,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 9,
+            "b": 3,
+            "operation": "subtract"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 6,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "calc_002",
+      "task_success": true
+    },
+    {
+      "actual_result": 6,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Subtract two numbers.",
+      "expected_result": 6,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 9,
+            "b": 3,
+            "operation": "subtract"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 6,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "calc_002",
+      "task_success": true
+    },
+    {
+      "actual_result": 56,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Multiply two numbers.",
+      "expected_result": 56,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 7,
+            "b": 8,
+            "operation": "multiply"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 56,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "calc_003",
+      "task_success": true
+    },
+    {
+      "actual_result": 56,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Multiply two numbers.",
+      "expected_result": 56,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 7,
+            "b": 8,
+            "operation": "multiply"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 56,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "calc_003",
+      "task_success": true
+    },
+    {
+      "actual_result": 5.0,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Divide two numbers.",
+      "expected_result": 5,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 20,
+            "b": 4,
+            "operation": "divide"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 5.0,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "calc_004",
+      "task_success": true
+    },
+    {
+      "actual_result": 5.0,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Divide two numbers.",
+      "expected_result": 5,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 20,
+            "b": 4,
+            "operation": "divide"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 5.0,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "calc_004",
+      "task_success": true
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "execution_failure",
+      "description": "Divide by zero.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 10,
+            "b": 0,
+            "operation": "divide"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "execution_error",
+            "message": "Cannot divide by zero."
+          },
+          "outcome": "execution_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "execution_error",
+              "message": "Cannot divide by zero."
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "calc_005",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "execution_failure",
+      "description": "Divide by zero.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 10,
+            "b": 0,
+            "operation": "divide"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "execution_error",
+            "message": "Cannot divide by zero."
+          },
+          "outcome": "execution_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "execution_error",
+              "message": "Cannot divide by zero."
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "calc_005",
+      "task_success": false
+    },
+    {
+      "actual_result": 3,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Add a negative and a positive number.",
+      "expected_result": 3,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": -5,
+            "b": 8,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 3,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "calc_006",
+      "task_success": true
+    },
+    {
+      "actual_result": 3,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Add a negative and a positive number.",
+      "expected_result": 3,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": -5,
+            "b": 8,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 3,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "calc_006",
+      "task_success": true
+    },
+    {
+      "actual_result": 7,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Subtract a negative number.",
+      "expected_result": 7,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 4,
+            "b": -3,
+            "operation": "subtract"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 7,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "calc_007",
+      "task_success": true
+    },
+    {
+      "actual_result": 7,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Subtract a negative number.",
+      "expected_result": 7,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 4,
+            "b": -3,
+            "operation": "subtract"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 7,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "calc_007",
+      "task_success": true
+    },
+    {
+      "actual_result": 0,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Multiply by zero.",
+      "expected_result": 0,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 9,
+            "b": 0,
+            "operation": "multiply"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 0,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "calc_008",
+      "task_success": true
+    },
+    {
+      "actual_result": 0,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Multiply by zero.",
+      "expected_result": 0,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 9,
+            "b": 0,
+            "operation": "multiply"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 0,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "calc_008",
+      "task_success": true
+    },
+    {
+      "actual_result": 4.0,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Add decimal values.",
+      "expected_result": 4.0,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 1.5,
+            "b": 2.5,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 4.0,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "calc_009",
+      "task_success": true
+    },
+    {
+      "actual_result": 4.0,
+      "actual_status": "success",
+      "category": "calculator",
+      "description": "Add decimal values.",
+      "expected_result": 4.0,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 1.5,
+            "b": 2.5,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 4.0,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "calc_009",
+      "task_success": true
+    },
+    {
+      "actual_result": 1.2427,
+      "actual_status": "success",
+      "category": "unit_conversion",
+      "description": "Convert kilometers to miles.",
+      "expected_result": 1.2427,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "from_unit": "km",
+            "to_unit": "miles",
+            "value": 2
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "unit_converter",
+          "tool_result": {
+            "error": null,
+            "result": 1.2427,
+            "success": true,
+            "tool_name": "unit_converter"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "unit_001",
+      "task_success": true
+    },
+    {
+      "actual_result": 1.2427,
+      "actual_status": "success",
+      "category": "unit_conversion",
+      "description": "Convert kilometers to miles.",
+      "expected_result": 1.2427,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "from_unit": "km",
+            "to_unit": "miles",
+            "value": 2
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "unit_converter",
+          "tool_result": {
+            "error": null,
+            "result": 1.2427,
+            "success": true,
+            "tool_name": "unit_converter"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "unit_001",
+      "task_success": true
+    },
+    {
+      "actual_result": 8.0467,
+      "actual_status": "success",
+      "category": "unit_conversion",
+      "description": "Convert miles to kilometers.",
+      "expected_result": 8.0467,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "from_unit": "miles",
+            "to_unit": "km",
+            "value": 5
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "unit_converter",
+          "tool_result": {
+            "error": null,
+            "result": 8.0467,
+            "success": true,
+            "tool_name": "unit_converter"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "unit_002",
+      "task_success": true
+    },
+    {
+      "actual_result": 8.0467,
+      "actual_status": "success",
+      "category": "unit_conversion",
+      "description": "Convert miles to kilometers.",
+      "expected_result": 8.0467,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "from_unit": "miles",
+            "to_unit": "km",
+            "value": 5
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "unit_converter",
+          "tool_result": {
+            "error": null,
+            "result": 8.0467,
+            "success": true,
+            "tool_name": "unit_converter"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "unit_002",
+      "task_success": true
+    },
+    {
+      "actual_result": 32.0,
+      "actual_status": "success",
+      "category": "unit_conversion",
+      "description": "Convert Celsius to Fahrenheit.",
+      "expected_result": 32.0,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "from_unit": "celsius",
+            "to_unit": "fahrenheit",
+            "value": 0
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "unit_converter",
+          "tool_result": {
+            "error": null,
+            "result": 32.0,
+            "success": true,
+            "tool_name": "unit_converter"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "unit_003",
+      "task_success": true
+    },
+    {
+      "actual_result": 32.0,
+      "actual_status": "success",
+      "category": "unit_conversion",
+      "description": "Convert Celsius to Fahrenheit.",
+      "expected_result": 32.0,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "from_unit": "celsius",
+            "to_unit": "fahrenheit",
+            "value": 0
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "unit_converter",
+          "tool_result": {
+            "error": null,
+            "result": 32.0,
+            "success": true,
+            "tool_name": "unit_converter"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "unit_003",
+      "task_success": true
+    },
+    {
+      "actual_result": 100.0,
+      "actual_status": "success",
+      "category": "unit_conversion",
+      "description": "Convert Fahrenheit to Celsius.",
+      "expected_result": 100.0,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "from_unit": "fahrenheit",
+            "to_unit": "celsius",
+            "value": 212
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "unit_converter",
+          "tool_result": {
+            "error": null,
+            "result": 100.0,
+            "success": true,
+            "tool_name": "unit_converter"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "unit_004",
+      "task_success": true
+    },
+    {
+      "actual_result": 100.0,
+      "actual_status": "success",
+      "category": "unit_conversion",
+      "description": "Convert Fahrenheit to Celsius.",
+      "expected_result": 100.0,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "from_unit": "fahrenheit",
+            "to_unit": "celsius",
+            "value": 212
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "unit_converter",
+          "tool_result": {
+            "error": null,
+            "result": 100.0,
+            "success": true,
+            "tool_name": "unit_converter"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "unit_004",
+      "task_success": true
+    },
+    {
+      "actual_result": {
+        "name": "Python",
+        "type": "programming_language",
+        "year": 1991
+      },
+      "actual_status": "success",
+      "category": "mock_lookup",
+      "description": "Look up Python.",
+      "expected_result": {
+        "name": "Python",
+        "type": "programming_language",
+        "year": 1991
+      },
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "key": "python"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "mock_lookup",
+          "tool_result": {
+            "error": null,
+            "result": {
+              "name": "Python",
+              "type": "programming_language",
+              "year": 1991
+            },
+            "success": true,
+            "tool_name": "mock_lookup"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "lookup_001",
+      "task_success": true
+    },
+    {
+      "actual_result": {
+        "name": "Python",
+        "type": "programming_language",
+        "year": 1991
+      },
+      "actual_status": "success",
+      "category": "mock_lookup",
+      "description": "Look up Python.",
+      "expected_result": {
+        "name": "Python",
+        "type": "programming_language",
+        "year": 1991
+      },
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "key": "python"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "mock_lookup",
+          "tool_result": {
+            "error": null,
+            "result": {
+              "name": "Python",
+              "type": "programming_language",
+              "year": 1991
+            },
+            "success": true,
+            "tool_name": "mock_lookup"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "lookup_001",
+      "task_success": true
+    },
+    {
+      "actual_result": {
+        "name": "Java",
+        "type": "programming_language",
+        "year": 1995
+      },
+      "actual_status": "success",
+      "category": "mock_lookup",
+      "description": "Look up Java.",
+      "expected_result": {
+        "name": "Java",
+        "type": "programming_language",
+        "year": 1995
+      },
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "key": "java"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "mock_lookup",
+          "tool_result": {
+            "error": null,
+            "result": {
+              "name": "Java",
+              "type": "programming_language",
+              "year": 1995
+            },
+            "success": true,
+            "tool_name": "mock_lookup"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "lookup_002",
+      "task_success": true
+    },
+    {
+      "actual_result": {
+        "name": "Java",
+        "type": "programming_language",
+        "year": 1995
+      },
+      "actual_status": "success",
+      "category": "mock_lookup",
+      "description": "Look up Java.",
+      "expected_result": {
+        "name": "Java",
+        "type": "programming_language",
+        "year": 1995
+      },
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "key": "java"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "mock_lookup",
+          "tool_result": {
+            "error": null,
+            "result": {
+              "name": "Java",
+              "type": "programming_language",
+              "year": 1995
+            },
+            "success": true,
+            "tool_name": "mock_lookup"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "lookup_002",
+      "task_success": true
+    },
+    {
+      "actual_result": 23,
+      "actual_status": "success",
+      "category": "tool_selection",
+      "description": "Select calculator to compute a sum.",
+      "expected_result": 23,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 11,
+            "b": 12,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 23,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "toolselect_001",
+      "task_success": true
+    },
+    {
+      "actual_result": 23,
+      "actual_status": "success",
+      "category": "tool_selection",
+      "description": "Select calculator to compute a sum.",
+      "expected_result": 23,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 11,
+            "b": 12,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "success",
+          "step": 1,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 23,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "toolselect_001",
+      "task_success": true
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "unknown_tool",
+      "description": "Call a nonexistent tool.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: nonexistent_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "nonexistent_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: nonexistent_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "nonexistent_tool"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "tool_001",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "unknown_tool",
+      "description": "Call a nonexistent tool.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: nonexistent_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "nonexistent_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: nonexistent_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "nonexistent_tool"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "tool_001",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "unknown_tool",
+      "description": "Call an unregistered tool.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: missing_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "missing_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: missing_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "missing_tool"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "tool_002",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "unknown_tool",
+      "description": "Call an unregistered tool.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: missing_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "missing_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: missing_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "missing_tool"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "tool_002",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "execution_failure",
+      "description": "Call calculator with an unsupported operation.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 2,
+            "b": 3,
+            "operation": "power"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "execution_error",
+            "message": "Unsupported operation: power"
+          },
+          "outcome": "execution_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "execution_error",
+              "message": "Unsupported operation: power"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "validation_001",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "execution_failure",
+      "description": "Call calculator with an unsupported operation.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 2,
+            "b": 3,
+            "operation": "power"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "execution_error",
+            "message": "Unsupported operation: power"
+          },
+          "outcome": "execution_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "execution_error",
+              "message": "Unsupported operation: power"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "validation_001",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "validation_failure",
+      "description": "Call calculator with a missing argument.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 2,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "validation_error",
+            "message": "Missing required argument: b"
+          },
+          "outcome": "validation_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "validation_error",
+              "message": "Missing required argument: b"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "validation_002",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "validation_failure",
+      "description": "Call calculator with a missing argument.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 2,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "validation_error",
+            "message": "Missing required argument: b"
+          },
+          "outcome": "validation_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "validation_error",
+              "message": "Missing required argument: b"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "validation_002",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "validation_failure",
+      "description": "Call calculator with a missing operand.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "b": 2,
+            "operation": "subtract"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "validation_error",
+            "message": "Missing required argument: a"
+          },
+          "outcome": "validation_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "validation_error",
+              "message": "Missing required argument: a"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "validation_003",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "validation_failure",
+      "description": "Call calculator with a missing operand.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "b": 2,
+            "operation": "subtract"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "validation_error",
+            "message": "Missing required argument: a"
+          },
+          "outcome": "validation_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "validation_error",
+              "message": "Missing required argument: a"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "validation_003",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "invalid_action",
+      "category": "malformed_action",
+      "description": "Return a malformed agent action.",
+      "expected_result": null,
+      "expected_status": "invalid_action",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": null,
+          "corrective_retry": false,
+          "error": {
+            "code": "malformed_action",
+            "message": "The model did not return a valid AgentAction."
+          },
+          "outcome": "invalid_action",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": null,
+          "tool_result": null
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "malformed_001",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "invalid_action",
+      "category": "malformed_action",
+      "description": "Return a malformed agent action.",
+      "expected_result": null,
+      "expected_status": "invalid_action",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": null,
+          "corrective_retry": false,
+          "error": {
+            "code": "malformed_action",
+            "message": "The model did not return a valid AgentAction."
+          },
+          "outcome": "invalid_action",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": null,
+          "tool_result": null
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "malformed_001",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "invalid_action",
+      "category": "malformed_action",
+      "description": "Return a null action.",
+      "expected_result": null,
+      "expected_status": "invalid_action",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": null,
+          "corrective_retry": false,
+          "error": {
+            "code": "malformed_action",
+            "message": "The model did not return a valid AgentAction."
+          },
+          "outcome": "invalid_action",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": null,
+          "tool_result": null
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "malformed_002",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "invalid_action",
+      "category": "malformed_action",
+      "description": "Return a null action.",
+      "expected_result": null,
+      "expected_status": "invalid_action",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": null,
+          "corrective_retry": false,
+          "error": {
+            "code": "malformed_action",
+            "message": "The model did not return a valid AgentAction."
+          },
+          "outcome": "invalid_action",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": null,
+          "tool_result": null
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "malformed_002",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "recovery_success",
+      "description": "Recover from an unknown tool and then add numbers.",
+      "expected_result": 7,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: nonexistent_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "nonexistent_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: nonexistent_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "nonexistent_tool"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "recovery_001",
+      "task_success": false
+    },
+    {
+      "actual_result": 7,
+      "actual_status": "success",
+      "category": "recovery_success",
+      "description": "Recover from an unknown tool and then add numbers.",
+      "expected_result": 7,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: nonexistent_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "nonexistent_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: nonexistent_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "nonexistent_tool"
+          }
+        },
+        {
+          "arguments": {
+            "a": 2,
+            "b": 5,
+            "operation": "add"
+          },
+          "corrective_retry": true,
+          "error": null,
+          "outcome": "success",
+          "step": 2,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 7,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 1,
+      "steps": 2,
+      "strategy": "recovery",
+      "task_id": "recovery_001",
+      "task_success": true
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "recovery_success",
+      "description": "Recover from invalid arguments and then multiply numbers.",
+      "expected_result": 12,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 2,
+            "operation": "multiply"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "validation_error",
+            "message": "Missing required argument: b"
+          },
+          "outcome": "validation_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "validation_error",
+              "message": "Missing required argument: b"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "recovery_002",
+      "task_success": false
+    },
+    {
+      "actual_result": 12,
+      "actual_status": "success",
+      "category": "recovery_success",
+      "description": "Recover from invalid arguments and then multiply numbers.",
+      "expected_result": 12,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 2,
+            "operation": "multiply"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "validation_error",
+            "message": "Missing required argument: b"
+          },
+          "outcome": "validation_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "validation_error",
+              "message": "Missing required argument: b"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        },
+        {
+          "arguments": {
+            "a": 3,
+            "b": 4,
+            "operation": "multiply"
+          },
+          "corrective_retry": true,
+          "error": null,
+          "outcome": "success",
+          "step": 2,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 12,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 1,
+      "steps": 2,
+      "strategy": "recovery",
+      "task_id": "recovery_002",
+      "task_success": true
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "recovery_success",
+      "description": "Recover from an execution error and then add numbers.",
+      "expected_result": 13,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 5,
+            "b": 0,
+            "operation": "divide"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "execution_error",
+            "message": "Cannot divide by zero."
+          },
+          "outcome": "execution_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "execution_error",
+              "message": "Cannot divide by zero."
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "recovery_004",
+      "task_success": false
+    },
+    {
+      "actual_result": 13,
+      "actual_status": "success",
+      "category": "recovery_success",
+      "description": "Recover from an execution error and then add numbers.",
+      "expected_result": 13,
+      "expected_status": "success",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 5,
+            "b": 0,
+            "operation": "divide"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "execution_error",
+            "message": "Cannot divide by zero."
+          },
+          "outcome": "execution_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "execution_error",
+              "message": "Cannot divide by zero."
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        },
+        {
+          "arguments": {
+            "a": 6,
+            "b": 7,
+            "operation": "add"
+          },
+          "corrective_retry": true,
+          "error": null,
+          "outcome": "success",
+          "step": 2,
+          "task_complete": true,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 13,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 1,
+      "steps": 2,
+      "strategy": "recovery",
+      "task_id": "recovery_004",
+      "task_success": true
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "recovery_failure",
+      "description": "Retry an unknown tool but fail again.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: nonexistent_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "nonexistent_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: nonexistent_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "nonexistent_tool"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "recovery_003",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "recovery_failure",
+      "description": "Retry an unknown tool but fail again.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: nonexistent_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "nonexistent_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: nonexistent_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "nonexistent_tool"
+          }
+        },
+        {
+          "arguments": {},
+          "corrective_retry": true,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: another_nonexistent_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 2,
+          "task_complete": false,
+          "tool_name": "another_nonexistent_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: another_nonexistent_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "another_nonexistent_tool"
+          }
+        }
+      ],
+      "retries_used": 1,
+      "steps": 2,
+      "strategy": "recovery",
+      "task_id": "recovery_003",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "recovery_failure",
+      "description": "Fail after the corrective action also fails.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 5,
+            "b": 0,
+            "operation": "divide"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "execution_error",
+            "message": "Cannot divide by zero."
+          },
+          "outcome": "execution_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "execution_error",
+              "message": "Cannot divide by zero."
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "recovery_005",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "recovery_failure",
+      "description": "Fail after the corrective action also fails.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 5,
+            "b": 0,
+            "operation": "divide"
+          },
+          "corrective_retry": false,
+          "error": {
+            "code": "execution_error",
+            "message": "Cannot divide by zero."
+          },
+          "outcome": "execution_error",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "execution_error",
+              "message": "Cannot divide by zero."
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        },
+        {
+          "arguments": {
+            "a": 8,
+            "b": 0,
+            "operation": "divide"
+          },
+          "corrective_retry": true,
+          "error": {
+            "code": "execution_error",
+            "message": "Cannot divide by zero."
+          },
+          "outcome": "execution_error",
+          "step": 2,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": {
+              "code": "execution_error",
+              "message": "Cannot divide by zero."
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 1,
+      "steps": 2,
+      "strategy": "recovery",
+      "task_id": "recovery_005",
+      "task_success": false
+    },
+    {
+      "actual_result": 2,
+      "actual_status": "step_limit",
+      "category": "step_limit",
+      "description": "Reach the step limit before completing the task.",
+      "expected_result": 4,
+      "expected_status": "step_limit",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 1,
+            "b": 1,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "tool_success_incomplete",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 2,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "limit_001",
+      "task_success": false
+    },
+    {
+      "actual_result": 2,
+      "actual_status": "step_limit",
+      "category": "step_limit",
+      "description": "Reach the step limit before completing the task.",
+      "expected_result": 4,
+      "expected_status": "step_limit",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {
+            "a": 1,
+            "b": 1,
+            "operation": "add"
+          },
+          "corrective_retry": false,
+          "error": null,
+          "outcome": "tool_success_incomplete",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "calculator",
+          "tool_result": {
+            "error": null,
+            "result": 2,
+            "success": true,
+            "tool_name": "calculator"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "limit_001",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "retry_exhaustion",
+      "description": "Fail without corrective retries.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: nonexistent_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "nonexistent_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: nonexistent_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "nonexistent_tool"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "retry_001",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "retry_exhaustion",
+      "description": "Fail without corrective retries.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: nonexistent_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "nonexistent_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: nonexistent_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "nonexistent_tool"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "retry_001",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "retry_exhaustion",
+      "description": "Fail on an unknown tool without retries.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: missing_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "missing_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: missing_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "missing_tool"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "baseline",
+      "task_id": "retry_002",
+      "task_success": false
+    },
+    {
+      "actual_result": null,
+      "actual_status": "failed",
+      "category": "retry_exhaustion",
+      "description": "Fail on an unknown tool without retries.",
+      "expected_result": null,
+      "expected_status": "failed",
+      "expected_status_match": true,
+      "history": [
+        {
+          "arguments": {},
+          "corrective_retry": false,
+          "error": {
+            "code": "unknown_tool",
+            "message": "Unknown tool: missing_tool"
+          },
+          "outcome": "unknown_tool",
+          "step": 1,
+          "task_complete": false,
+          "tool_name": "missing_tool",
+          "tool_result": {
+            "error": {
+              "code": "unknown_tool",
+              "message": "Unknown tool: missing_tool"
+            },
+            "result": null,
+            "success": false,
+            "tool_name": "missing_tool"
+          }
+        }
+      ],
+      "retries_used": 0,
+      "steps": 1,
+      "strategy": "recovery",
+      "task_id": "retry_002",
+      "task_success": false
+    }
+  ],
+  "run_id": "run_a",
+  "strategies": [
+    "baseline",
+    "recovery"
+  ]
+}
